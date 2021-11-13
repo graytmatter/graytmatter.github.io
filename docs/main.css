@@ -10,7 +10,7 @@ body, html {
 **************/
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Cherry\ banner.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Cherry\ banner.jpeg");
 
   /* Set a specific height */
   height: 500px;
@@ -94,7 +94,7 @@ background-color: #111;
 }
 
 /*****************
-      Cards
+    Work Cards
 ******************/
 
 .card-project {
@@ -134,31 +134,31 @@ background-color: #111;
 
 
 #RTC-Image{
-    background-image: url("../images/RTC.jpeg");
+    background-image: url("images/RTC.jpeg");
 }
 
 #MS-Image{
-    background-image: url("../images/Aspire\ Talk.jpeg");
+    background-image: url("images/Aspire\ Talk.jpeg");
 }
 
 #SSRC-Image{
-    background-image: url("../images/SSRC.jpeg");
+    background-image: url("images/SSRC.jpeg");
 }
 
 #UCSC-Image{
-    background-image: url("../images/BaskinTA.jpeg");
+    background-image: url("images/BaskinTA.jpeg");
 }
 
 #Sandia-Image{
-    background-image: url("../images/Sandia.png");
+    background-image: url("images/Sandia.png");
 }
 
 #LMG-Image{
-    background-image: url("../images/LMG.jpeg");
+    background-image: url("images/LMG.jpeg");
 }
 
 #GA-Image{
-    background-image: url("../images/GA.jpeg");
+    background-image: url("images/GA.jpeg");
     margin-bottom: 10px;
 }
 
@@ -211,6 +211,36 @@ background-color: #111;
         display: none;
     }
 }
+
+
+/*****************
+  Research Cards
+******************/
+
+#Quantum-Image{
+    background-image: url("images/Quantum.jpg");
+}
+
+#Coin-Image{
+    background-image: url("images/Coin.jpeg");
+}
+
+#MCSP-Image{
+    background-image: url("images/MCSP.png");
+}
+
+#NVM-Image{
+    background-image: url("images/NVM.png");
+}
+
+#Hash-Image{
+    background-image: url("images/epicyle.jpeg");
+}
+
+#Facial-Image{
+    background-image: url("images/Facial.jpeg");
+}
+
 
 
 .fa {
