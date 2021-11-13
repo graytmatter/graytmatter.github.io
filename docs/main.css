@@ -60,7 +60,7 @@ float: left;
 }
 
 .float-right{
-    float: right;
+    float: right !important;
 }
 
 #navigation>li  a {
@@ -242,8 +242,25 @@ background-color: #111;
 }
 
 
+.home-profile {
+    width: 250px;
+    height: 250px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
+    border-radius: 8px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
 
-.fa {
+@media (max-width: 600px) {
+    .research{
+        padding: 30%; 
+    }
+}
+
+/* .fa {
     -webkit-font-smoothing: antialiased;
     display: flex;
     text-align: center;
@@ -267,4 +284,4 @@ background-color: #111;
 .icon{
     position: relative;
     float: center;
-}
+} */
