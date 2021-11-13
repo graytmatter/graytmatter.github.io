@@ -260,6 +260,15 @@ background-color: #111;
     }
 }
 
+/*****************
+  Contact & Footer
+******************/
+
+.footer{
+    background-color: #ebf5ff;
+    padding: 10px;
+}
+
 /* .fa {
     -webkit-font-smoothing: antialiased;
     display: flex;
