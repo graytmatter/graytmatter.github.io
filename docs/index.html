@@ -1,6 +1,212 @@
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://use.fontawesome.com/cacfa54c01.js"></script>
+    </head>
     <body>
-        <p>Hello world</p>
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Matthew Gray</h1>
+          <h2>Adjunct Faculty of Computer Science at Renton Technical College</h2>
+          <h2>Theoretical Computer Scientist and Mathematician</h2>
+        </div>
+      </div>
+      <ul id="navigation">
+        <li><a href="#work">Work Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#interests">Research Interests</a></li>
+        <li><a href="#projects">Academic Projects</a></li>
+        <li><a href="Student-Letter.pdf">Student's Letter</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="CV.pdf">CV</a></li>
+        
+        <li class="float-right"><a href="#contact">Contact</a></li>
+      </ul>
+      <div id="main">
+        <div class="section section-white" id="work">
+          <h2 class="section-title">Work Experience</h2>
+          <!-- <p class="text-center">Click a project to find out more.</p> -->
+
+          <div class="card-project" id="RTC-Image">
+            <div class="card-project-details">
+              <!-- Image and information for the card -->
+              <div class="card-project-description">
+                <h4>Renton Technical College: Adjunct Faculty</h4>
+                <i class="fa fa-camera-retro"></i>
+                <p>Renton WA: Teaching Web Development. Bringing in Guest Speakers from across Industry and Academia to expose Students to career paths and show them how to pursue those paths. And helping redesign the AAS curriculum to focus on web as a more accessible entry point into the Industry.
+                </p>
+              </div>
+              <!-- Overlayed link to Work Experience show page -->
+              <div class="hid-link"></div>
+            </div>
+          </div>
+
+          <div class="card-project" id="MS-Image">
+            <div class="card-project-details">
+              <!-- Image and information for the card -->
+              <div class="card-project-description">
+                <h4>Microsoft: Software Engineering</h4>
+                <p>Oslo Norway: Working with a large team on React Native components used across Office 365 with a focus on iOS and Android development. My most notable project was implementing the accessibility API for React Native macOS.</p>
+              </div>
+              <!-- Overlayed link to Work Experience show page -->
+              <div class="hid-link"></div>
+            </div>
+          </div>
+
+          <div class="card-project" id="SSRC-Image">
+            <div class="card-project-details">
+              <!-- Image and information for the card -->
+              <div class="card-project-description">
+                <h4>Storage Systems Research Center: Research Assistant</h4>
+                <p class="too-long-550">Santa Cruz, CA: Worked with graduate students and professors on research into storage and secu- rity. Notable projects include fooling facial recognition, using Fourier Analysis to investigate MD5, and Designing Data Structures to Minimize Bit Flips on NVM</p>
+                <p class="short-550">Santa Cruz, CA: Worked with graduate students and professors on research into storage and secu- rity. Notable projects include fooling facial recognition, using Fourier Analysis to investigate MD5, and Designing Data Structures to Minimize...</p>
+              </div>
+              <!-- Overlayed link to Work Experience show page -->
+              <div class="hid-link"></div>
+            </div>
+          </div>
+
+          <div class="card-project" id="UCSC-Image">
+            <div class="card-project-details">
+              <!-- Image and information for the card -->
+              <div class="card-project-description">
+                <h4>UC Santa Cruz: Teaching Assistant</h4>
+                <p class="too-long-550">Santa Cruz, CA: TA’ed several algorithms, data structures, and programming courses. Developed and ran two student lead courses on the Mathematics of Communication (CS42A). Topics I have taught include Number Theoretic Cryptography, Information Theoretic Compression, Error Correcting Codes, Stack Frames, and Memory Management</p>
+                <p class="short-550">Santa Cruz, CA: TA’ed several algorithms, data structures, and programming courses. Developed and ran two student lead courses on the Mathematics of Communication (CS42A). Topics I have taught include Number Theoretic Cryptography, Information Theoretic Compression, Error Correcting...</p>
+              </div>
+              <!-- Overlayed link to Work Experience show page -->
+              <div class="hid-link"></div>
+            </div>
+          </div>
+
+          <div class="card-project" id="Sandia-Image">
+            <div class="card-project-details">
+              <!-- Image and information for the card -->
+              <div class="card-project-description">
+                <h4>Sandia National Labs: Research and Developement Intern</h4>
+                <p>Livermore, CA: Worked on Cyber Security Research, with a focus on on write efficient databases, applied cryptography, secure multi-party computation, and passive data collection. Worked on a large C++ codebase.</p>
+              </div>
+              <!-- Overlayed link to Work Experience show page -->
+              <div class="hid-link"></div>
+            </div>
+          </div>
+
+          <div class="card-project" id="LMG-Image">
+            <div class="card-project-details">
+              <!-- Image and information for the card -->
+              <div class="card-project-description">
+                <h4>Last Minute Gear: Web Developer</h4>
+                <p>San Francisco, CA: Maintained and expanded a full stack web app and it’s associated testing suite. Reg- ular use of Ruby, Javascript, HTML, CSS, Heroku, git etc. Occasionally did odd jobs as needed since I was half of a two man start up.</p>
+              </div>
+              <!-- Overlayed link to Work Experience show page -->
+              <div class="hid-link"></div>
+            </div>
+          </div>
+
+          <div class="card-project bottom-card" id="GA-Image">
+            <div class="card-project-details">
+              <!-- Image and information for the card -->
+              <div class="card-project-description">
+                <h4>General Assembly: Teaching Assistant</h4>
+                <p>San Francisco, CA: Explained difficult Javascript and Ruby on Rails concepts. Drew out student’s knowl- edge by listening and asking questions. Guided students through troubleshooting so they could use similar techniques in the future.</p>
+              </div>
+              <!-- Overlayed link to Work Experience show page -->
+              <div class="hid-link"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section section-white" id="publications">
+          <h2 class="section-title">Publications</h2>
+          <ul>
+            <li>2019 Matthew Gray. “LOADS of Space”, Local Order Agnosticism and Bit Flip Efficient Data Structure Codes. https://arxiv.org/abs/1908.05415, August 2019</li>
+            <li>2018 Daniel Bittman, Matthew Gray, Justin Raizes, Sinjoni Mukhopadhyay, Matt Bryson, Peter Alvaro, Darrell Long, and Ethan L Miller. Designing Data Structures to Minimize Bit Flips On NVM. In 2018 IEEE 7th Non-Volatile Memory Systems and Applications Symposium(NVMSA), pages 85–90. IEEE, 2018</li>
+          </ul>
+        </div>
+
+        <div class="section section-white" id="interests">
+          <h2 class="section-title">Research Interests</h2>
+          <ul>
+            <li>Quantum Computing, Quantum Cryptogrpahy, and Secure Multiparty Quantum Computation.</li>
+            <li>Cryptogrpahy, Secure Multiparty Computation, Multiparty Coin Flipping, and Sortition.</li>
+            <li>Coding Theory, Non-Volatile Memory, Local Order Agnosticism, and Bit-Flip-Effecient Codes. </li>
+            <li>Complexity Theory, Circuit Complexity, and The Minimum Size Circuit Problem.</li>
+            <li>Information Theory, Error Correction, Compression, Learning, and Inference.</li>
+            <li>Fourier Analysis of Boolean Fucntions and Hash Fucntion Analysis.</li>
+            <li>Write Effecient Data Structures, Monotonicity Testing, and Sublinear Algorithms.</li>
+          </ul>
+        </div>
+
+        <div class="section section-white" id="projects">
+          <h2 class="section-title">Academic Projects</h2>
+          
+          <div class="card-project" id="LMG-Image">
+            <div class="card-project-details">
+              <!-- Image and information for the card -->
+              <div class="card-project-description">
+                <h4>Last Minute Gear: Web Developer</h4>
+                <p>San Francisco, CA: Maintained and expanded a full stack web app and it’s associated testing suite. Reg- ular use of Ruby, Javascript, HTML, CSS, Heroku, git etc. Occasionally did odd jobs as needed since I was half of a two man start up.</p>
+              </div>
+              <!-- Overlayed link to Work Experience show page -->
+              <div class="hid-link"></div>
+            </div>
+          </div>
+          <div class="card-project" id="LMG-Image">
+            <div class="card-project-details">
+              <!-- Image and information for the card -->
+              <div class="card-project-description">
+                <h4>Last Minute Gear: Web Developer</h4>
+                <p>San Francisco, CA: Maintained and expanded a full stack web app and it’s associated testing suite. Reg- ular use of Ruby, Javascript, HTML, CSS, Heroku, git etc. Occasionally did odd jobs as needed since I was half of a two man start up.</p>
+              </div>
+              <!-- Overlayed link to Work Experience show page -->
+              <div class="hid-link"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section section-white" id="about">
+          <h2 class="section-title">About</h2>
+              <div class="home-about">
+            <div class="p-3">
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="section section-blue" id="contact">
+          <div>
+            <h2 class="section-title">Contact</h2>
+            <div class="text-center">
+              <p>matt.t.gray[at]gmail[dot]com  +1 (510) 610-8894</p>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="section section-blue" id="section-350">
+          <div>
+            <h2>Contact</h2>
+            <div class="text-center">
+              <p>Feel free to connect with me using any of the links provided.</p>
+              <a class="btn-box" href="/contacts/new">Contact Form</a>
+            </div>
+          </div>
+
+        <div class="icon">
+          <a class="icon-link" href="https://www.facebook.com/jessica.dewitt.779"><i class="fa fa-facebook fa-5x" aria-hidden="true"></i></a>
+        </div>
+        <div class="icon">
+          <a class="icon-link" href="https://www.instagram.com/opalevanescence/"><i class="fa fa-instagram fa-5x" aria-hidden="true"></i></a>
+        </div>
+        <div class="icon">
+          <a class="icon-link" href="https://www.linkedin.com/in/jessica-a-dewitt/"><i class="fa fa-linkedin fa-5x" aria-hidden="true"></i></a>
+        </div>
+        <div class="icon">
+          <a class="icon-link" href="https://github.com/Opalevanescence"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
+        </div>
+        </div>
+      </div>
     </body>
 </html>
