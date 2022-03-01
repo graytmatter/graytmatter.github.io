@@ -1,0 +1,25 @@
+
+.column{
+    width: 48%;
+    float: left;
+    padding: 1%;
+}
+
+.frame{
+    min-height: 50px;
+    border: 1px solid black;
+    padding: 2px;
+    margin: 1px
+}
+
+.active{
+    background-color: rgb(255, 255, 255);
+}
+.inactive{
+    background-color: rgb(211, 211, 211);
+}
+
+#content{
+    width: 100%;
+    min-height: 320px;
+}
