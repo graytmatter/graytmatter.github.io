@@ -33,12 +33,33 @@
             <i class="fa fa-play"></i>
         </button>
     </h1>
+    <div id="intro">
+        <p>
+            This is a scoping visualizer that allows you to see how JS scoping rules function. <br>
+            On the left you can create JS programs in a limited and fragile subset of javascript. <br>
+            The rules for this language are as follows:
+            <ul>
+                <li>The only valid lines of code are:</li>
+                <ul>
+                    <li>variable decelerations of the form "var thingy = 4;"</li>
+                    <li>function definitions of the form "function a(){"", notably this only works if the closing brace falls of a line after the opening brace.</li>
+                    <li>the closing of a function definition which is always formed like "}"</li>
+                    <li>variable modifications of the form "thingy = '7';"</li>
+                    <li>function calls of the form "a();"</li>
+                    <li>console.log's of the form "console.log('hi')"" or "console.log(thingy)"</li>
+                </ul>
+                <li> all lines of code except closing brackets must end with a semi colon</li>
+            </ul>
+            I believe that if you follow these rules then the JS program will be run correctly. <br>
+            And at each stage in the process the current scope frames will be shown on the right.
+        </p>
+    </div>
     <div id = "content">
         <div id ="code-editor" class="column">
 
         </div>
         <div class="column frame" >
-            FRAMES  
+            FRAMES
             <div id="display">
                 
             </div>

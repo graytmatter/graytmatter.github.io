@@ -172,7 +172,7 @@ background-color: #111;
 
 .card-project:hover {
     background-image: none !important;
-    background-color:#ebf5ff !important;
+    background-color:#fcecf0 !important;
 }
 
 .card-project:hover .card-project-description h4{
@@ -278,9 +278,40 @@ background-color: #111;
 ******************/
 
 .footer{
-    background-color: #ebf5ff;
+    background-color: #d1e9b4;
     padding: 10px;
 }
+
+
+.fa-stack-1x {
+    color:white;
+}
+
+.icon-container{
+    display: inline-block;
+}
+/* .icon-linkedin{
+    color:#0072b1;
+}
+
+.icon-github{
+    color: #6e5494;
+} */
+
+.fa-stack{
+    color: #453C8D;
+}
+/* .icon-facebook {
+   color:#3b5998;
+}
+
+.icon-twitter {
+    color:#00aced;
+}
+
+.icon-gplus{
+    color:#dd4b39;
+} */
 
 /* .fa {
     -webkit-font-smoothing: antialiased;
