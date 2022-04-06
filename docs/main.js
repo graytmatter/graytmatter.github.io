@@ -8,7 +8,7 @@ function shadeNav(){
         }
     }else{
         if(window.pageYOffset >= 350-92){
-            nav.style.background = "rgba(0, 0, 0, 0.9)"
+            nav.style.background = "rgba(0, 0, 0, 1)"
         }else{
             nav.style.background= "rgba(0, 0, 0, 0.5)"
         }
