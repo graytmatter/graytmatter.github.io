@@ -15,6 +15,11 @@ function shadeNav(){
     }
 }
 
+function scrollToSection(id){
+    console.log(id);
+    $(document).scrollTop($(id).offset().top-(50+parseInt($("#navigation").css("height"))))
+}
+
 window.addEventListener("load", ()=>{
     window.addEventListener("scroll", shadeNav)
 })
