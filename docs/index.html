@@ -6,351 +6,353 @@
         <script src="main.js"></script>
     </head>
     <body>
-      <div class="hero-image">
-        <canvas id="petals"></canvas>
-        <div class="hero-text">
-          <h1>Matthew Gray</h1>
-          <h2>Adjunct Faculty of Computer Science at Renton Technical College</h2>
-          <h2>Theoretical Computer Scientist and Mathematician</h2>
-        </div>
-      </div>
-      <ul id="navigation">
-        <li onclick="scrollToSection('#work')"><a>Work Experience</a></li>
-        <li><a onclick="scrollToSection('#publications')">Publications</a></li>
-        <li><a onclick="scrollToSection('#interests')">Research Interests</a></li>
-        <li><a onclick="scrollToSection('#projects')">Academic Projects</a></li>
-        <li><a onclick="scrollToSection('#about')">About</a></li>
-        <li><a onclick="scrollToSection('#contact')">Contact</a></li>
-        <!-- <li class="float-right"><a href="Student-Letter.pdf">Student's Letter</a></li> -->
-        <li class="float-right"><a href="CV.pdf">CV</a></li>
-        
-      </ul>
-      <div id="main">
-        <div class="section section-white">
-          <h2 class="section-title">Work Experience</h2>
-          <div id="work"></div>
-          <!-- <p class="text-center">Click a project to find out more.</p> -->
-
-          <div class="card-project" id="RTC-Image">
-            <div class="card-project-details">
-              <!-- Image and information for the card -->
-              <div class="card-project-description">
-                <h4>Renton Technical College: Adjunct Faculty</h4>
-                <p>Renton WA: Teaching Web Development. Bringing in Guest Speakers from across Industry and Academia to expose Students to career paths and show them how to pursue those paths. And helping redesign the AAS curriculum to focus on web as a more accessible entry point into the Industry.
-                </p>
-              </div>
-              <!-- Overlayed link to Work Experience show page -->
-              <div class="hid-link"></div>
-            </div>
-          </div>
-
-          <div class="card-project" id="MS-Image">
-            <div class="card-project-details">
-              <!-- Image and information for the card -->
-              <div class="card-project-description">
-                <h4>Microsoft: Software Engineering</h4>
-                <p>Oslo Norway: Working with a large team on React Native components used across Office 365 with a focus on iOS and Android development. My most notable project was implementing the accessibility API for React Native macOS.</p>
-              </div>
-              <!-- Overlayed link to Work Experience show page -->
-              <div class="hid-link"></div>
-            </div>
-          </div>
-
-          <div class="card-project" id="SSRC-Image">
-            <div class="card-project-details">
-              <!-- Image and information for the card -->
-              <div class="card-project-description">
-                <h4>Storage Systems Research Center: Research Assistant</h4>
-                <p class="too-long-550">Santa Cruz, CA: Worked with graduate students and professors on research into storage and secu- rity. Notable projects include fooling facial recognition, using Fourier Analysis to investigate MD5, and Designing Data Structures to Minimize Bit Flips on NVM</p>
-                <p class="short-550">Santa Cruz, CA: Worked with graduate students and professors on research into storage and secu- rity. Notable projects include fooling facial recognition, using Fourier Analysis to investigate MD5, and Designing Data Structures to Minimize...</p>
-              </div>
-              <!-- Overlayed link to Work Experience show page -->
-              <div class="hid-link"></div>
-            </div>
-          </div>
-
-          <div class="card-project" id="UCSC-Image">
-            <div class="card-project-details">
-              <!-- Image and information for the card -->
-              <div class="card-project-description">
-                <h4>UC Santa Cruz: Teaching Assistant</h4>
-                <p class="too-long-550">Santa Cruz, CA: TA’ed several algorithms, data structures, and programming courses. Developed and ran two student lead courses on the Mathematics of Communication (CS42A). Topics I have taught include Number Theoretic Cryptography, Information Theoretic Compression, Error Correcting Codes, Stack Frames, and Memory Management</p>
-                <p class="short-550">Santa Cruz, CA: TA’ed several algorithms, data structures, and programming courses. Developed and ran two student lead courses on the Mathematics of Communication (CS42A). Topics I have taught include Number Theoretic Cryptography, Information Theoretic Compression, Error Correcting...</p>
-              </div>
-              <!-- Overlayed link to Work Experience show page -->
-              <div class="hid-link"></div>
-            </div>
-          </div>
-
-          <div class="card-project" id="Sandia-Image">
-            <div class="card-project-details">
-              <!-- Image and information for the card -->
-              <div class="card-project-description">
-                <h4>Sandia National Labs: Research and Developement Intern</h4>
-                <p>Livermore, CA: Worked on Cyber Security Research, with a focus on on write efficient databases, applied cryptography, secure multi-party computation, and passive data collection. Worked on a large C++ codebase.</p>
-              </div>
-              <!-- Overlayed link to Work Experience show page -->
-              <div class="hid-link"></div>
-            </div>
-          </div>
-
-          <div class="card-project" id="LMG-Image">
-            <div class="card-project-details">
-              <!-- Image and information for the card -->
-              <div class="card-project-description">
-                <h4>Last Minute Gear: Web Developer</h4>
-                <p>San Francisco, CA: Maintained and expanded a full stack web app and it’s associated testing suite. Reg- ular use of Ruby, Javascript, HTML, CSS, Heroku, git etc. Occasionally did odd jobs as needed since I was half of a two man start up.</p>
-              </div>
-              <!-- Overlayed link to Work Experience show page -->
-              <div class="hid-link"></div>
-            </div>
-          </div>
-
-          <div class="card-project bottom-card" id="GA-Image">
-            <div class="card-project-details">
-              <!-- Image and information for the card -->
-              <div class="card-project-description">
-                <h4>General Assembly: Teaching Assistant</h4>
-                <p>San Francisco, CA: Explained difficult Javascript and Ruby on Rails concepts. Drew out student’s knowl- edge by listening and asking questions. Guided students through troubleshooting so they could use similar techniques in the future.</p>
-              </div>
-              <!-- Overlayed link to Work Experience show page -->
-              <div class="hid-link"></div>
-            </div>
+      <div id="container">
+        <div class="hero-image">
+          <canvas id="petals"></canvas>
+          <div class="hero-text">
+            <h1>Matthew Gray</h1>
+            <h2>Adjunct Faculty of Computer Science at Renton Technical College</h2>
+            <h2>Theoretical Computer Scientist and Mathematician</h2>
           </div>
         </div>
-
-        <div class="section section-white">
-          <h2 class="section-title">Publications</h2>
-          <div id="publications"></div>
-          <ul>
-            <li>2019 Matthew Gray. “LOADS of Space”, Local Order Agnosticism and Bit Flip Efficient Data Structure Codes. https://arxiv.org/abs/1908.05415, August 2019</li>
-            <li>2018 Daniel Bittman, Matthew Gray, Justin Raizes, Sinjoni Mukhopadhyay, Matt Bryson, Peter Alvaro, Darrell Long, and Ethan L Miller. Designing Data Structures to Minimize Bit Flips On NVM. In 2018 IEEE 7th Non-Volatile Memory Systems and Applications Symposium(NVMSA), pages 85–90. IEEE, 2018</li>
-          </ul>
-        </div>
-
-        <div class="section section-white">
-          <h2 class="section-title">Research Interests</h2>
-          <div id="interests"></div>
-          <ul>
-            <li>Quantum Computing, Quantum Cryptogrpahy, and Secure Multiparty Quantum Computation.</li>
-            <li>Cryptogrpahy, Secure Multiparty Computation, Multiparty Coin Flipping, and Sortition.</li>
-            <li>Coding Theory, Non-Volatile Memory, Local Order Agnosticism, and Bit-Flip-Effecient Codes. </li>
-            <li>Complexity Theory, Circuit Complexity, and The Minimum Size Circuit Problem.</li>
-            <li>Information Theory, Error Correction, Compression, Learning, and Inference.</li>
-            <li>Fourier Analysis of Boolean Fucntions and Hash Fucntion Analysis.</li>
-            <li>Write Effecient Data Structures, Monotonicity Testing, and Sublinear Algorithms.</li>
-          </ul>
-        </div>
-
-        <div class="section section-white">
-          <h2 class="section-title">Academic Projects</h2>
-          <div id="projects"></div>
+        <ul id="navigation">
+          <li onclick="scrollToSection('#work')"><a>Work Experience</a></li>
+          <li><a onclick="scrollToSection('#publications')">Publications</a></li>
+          <li><a onclick="scrollToSection('#interests')">Research Interests</a></li>
+          <li><a onclick="scrollToSection('#projects')">Academic Projects</a></li>
+          <li><a onclick="scrollToSection('#about')">About</a></li>
+          <li><a onclick="scrollToSection('#contact')">Contact</a></li>
+          <!-- <li class="float-right"><a href="Student-Letter.pdf">Student's Letter</a></li> -->
+          <li class="float-right"><a href="CV.pdf">CV</a></li>
           
-          <div class="card-project research" id="Quantum-Image">
-            <div class="card-project-details">
-              <!-- Image and information for the card -->
-              <div class="card-project-description">
-                <h4>Secure Multiparty Quantum Computation for Single Output Functions</h4>
-                <p>
-                  Fall 2021-Present, Collaborators: Justin Raizes (CMU) & Chen-Da Liu (CMU)
-                  Ongoing research into whether improvements to protocol parameters can be 
-                  achieved when doing SMPQC for functions with a solitary output. Because of the 
-                  No Cloning Theorem, quantum results paralel to the classical results of Halevi 
-                  et. al 2019 present a natural problem and seem likely to be achievable.
-                </p>
+        </ul>
+        <div id="main">
+          <div class="section section-white">
+            <h2 class="section-title">Work Experience</h2>
+            <div id="work"></div>
+            <!-- <p class="text-center">Click a project to find out more.</p> -->
+
+            <div class="card-project" id="RTC-Image">
+              <div class="card-project-details">
+                <!-- Image and information for the card -->
+                <div class="card-project-description">
+                  <h4>Renton Technical College: Adjunct Faculty</h4>
+                  <p>Renton WA: Teaching Web Development. Bringing in Guest Speakers from across Industry and Academia to expose Students to career paths and show them how to pursue those paths. And helping redesign the AAS curriculum to focus on web as a more accessible entry point into the Industry.
+                  </p>
+                </div>
+                <!-- Overlayed link to Work Experience show page -->
+                <div class="hid-link"></div>
+              </div>
+            </div>
+
+            <div class="card-project" id="MS-Image">
+              <div class="card-project-details">
+                <!-- Image and information for the card -->
+                <div class="card-project-description">
+                  <h4>Microsoft: Software Engineering</h4>
+                  <p>Oslo Norway: Working with a large team on React Native components used across Office 365 with a focus on iOS and Android development. My most notable project was implementing the accessibility API for React Native macOS.</p>
+                </div>
+                <!-- Overlayed link to Work Experience show page -->
+                <div class="hid-link"></div>
+              </div>
+            </div>
+
+            <div class="card-project" id="SSRC-Image">
+              <div class="card-project-details">
+                <!-- Image and information for the card -->
+                <div class="card-project-description">
+                  <h4>Storage Systems Research Center: Research Assistant</h4>
+                  <p class="too-long-550">Santa Cruz, CA: Worked with graduate students and professors on research into storage and secu- rity. Notable projects include fooling facial recognition, using Fourier Analysis to investigate MD5, and Designing Data Structures to Minimize Bit Flips on NVM</p>
+                  <p class="short-550">Santa Cruz, CA: Worked with graduate students and professors on research into storage and secu- rity. Notable projects include fooling facial recognition, using Fourier Analysis to investigate MD5, and Designing Data Structures to Minimize...</p>
+                </div>
+                <!-- Overlayed link to Work Experience show page -->
+                <div class="hid-link"></div>
+              </div>
+            </div>
+
+            <div class="card-project" id="UCSC-Image">
+              <div class="card-project-details">
+                <!-- Image and information for the card -->
+                <div class="card-project-description">
+                  <h4>UC Santa Cruz: Teaching Assistant</h4>
+                  <p class="too-long-550">Santa Cruz, CA: TA’ed several algorithms, data structures, and programming courses. Developed and ran two student lead courses on the Mathematics of Communication (CS42A). Topics I have taught include Number Theoretic Cryptography, Information Theoretic Compression, Error Correcting Codes, Stack Frames, and Memory Management</p>
+                  <p class="short-550">Santa Cruz, CA: TA’ed several algorithms, data structures, and programming courses. Developed and ran two student lead courses on the Mathematics of Communication (CS42A). Topics I have taught include Number Theoretic Cryptography, Information Theoretic Compression, Error Correcting...</p>
+                </div>
+                <!-- Overlayed link to Work Experience show page -->
+                <div class="hid-link"></div>
+              </div>
+            </div>
+
+            <div class="card-project" id="Sandia-Image">
+              <div class="card-project-details">
+                <!-- Image and information for the card -->
+                <div class="card-project-description">
+                  <h4>Sandia National Labs: Research and Developement Intern</h4>
+                  <p>Livermore, CA: Worked on Cyber Security Research, with a focus on on write efficient databases, applied cryptography, secure multi-party computation, and passive data collection. Worked on a large C++ codebase.</p>
+                </div>
+                <!-- Overlayed link to Work Experience show page -->
+                <div class="hid-link"></div>
+              </div>
+            </div>
+
+            <div class="card-project" id="LMG-Image">
+              <div class="card-project-details">
+                <!-- Image and information for the card -->
+                <div class="card-project-description">
+                  <h4>Last Minute Gear: Web Developer</h4>
+                  <p>San Francisco, CA: Maintained and expanded a full stack web app and it’s associated testing suite. Reg- ular use of Ruby, Javascript, HTML, CSS, Heroku, git etc. Occasionally did odd jobs as needed since I was half of a two man start up.</p>
+                </div>
+                <!-- Overlayed link to Work Experience show page -->
+                <div class="hid-link"></div>
+              </div>
+            </div>
+
+            <div class="card-project bottom-card" id="GA-Image">
+              <div class="card-project-details">
+                <!-- Image and information for the card -->
+                <div class="card-project-description">
+                  <h4>General Assembly: Teaching Assistant</h4>
+                  <p>San Francisco, CA: Explained difficult Javascript and Ruby on Rails concepts. Drew out student’s knowl- edge by listening and asking questions. Guided students through troubleshooting so they could use similar techniques in the future.</p>
+                </div>
+                <!-- Overlayed link to Work Experience show page -->
+                <div class="hid-link"></div>
               </div>
             </div>
           </div>
 
-          <div class="card-project research" id="Coin-Image">
-            <div class="card-project-details">
-              <!-- Image and information for the card -->
-              <div class="card-project-description">
-                <h4>Multiparty Coin Flipping for Large Scale Sortition</h4>
+          <div class="section section-white">
+            <h2 class="section-title">Publications</h2>
+            <div id="publications"></div>
+            <ul>
+              <li>2019 Matthew Gray. “LOADS of Space”, Local Order Agnosticism and Bit Flip Efficient Data Structure Codes. https://arxiv.org/abs/1908.05415, August 2019</li>
+              <li>2018 Daniel Bittman, Matthew Gray, Justin Raizes, Sinjoni Mukhopadhyay, Matt Bryson, Peter Alvaro, Darrell Long, and Ethan L Miller. Designing Data Structures to Minimize Bit Flips On NVM. In 2018 IEEE 7th Non-Volatile Memory Systems and Applications Symposium(NVMSA), pages 85–90. IEEE, 2018</li>
+            </ul>
+          </div>
+
+          <div class="section section-white">
+            <h2 class="section-title">Research Interests</h2>
+            <div id="interests"></div>
+            <ul>
+              <li>Quantum Computing, Quantum Cryptogrpahy, and Secure Multiparty Quantum Computation.</li>
+              <li>Cryptogrpahy, Secure Multiparty Computation, Multiparty Coin Flipping, and Sortition.</li>
+              <li>Coding Theory, Non-Volatile Memory, Local Order Agnosticism, and Bit-Flip-Effecient Codes. </li>
+              <li>Complexity Theory, Circuit Complexity, and The Minimum Size Circuit Problem.</li>
+              <li>Information Theory, Error Correction, Compression, Learning, and Inference.</li>
+              <li>Fourier Analysis of Boolean Fucntions and Hash Fucntion Analysis.</li>
+              <li>Write Effecient Data Structures, Monotonicity Testing, and Sublinear Algorithms.</li>
+            </ul>
+          </div>
+
+          <div class="section section-white">
+            <h2 class="section-title">Academic Projects</h2>
+            <div id="projects"></div>
+            
+            <div class="card-project research" id="Quantum-Image">
+              <div class="card-project-details">
+                <!-- Image and information for the card -->
+                <div class="card-project-description">
+                  <h4>Secure Multiparty Quantum Computation for Single Output Functions</h4>
+                  <p>
+                    Fall 2021-Present, Collaborators: Justin Raizes (CMU) & Chen-Da Liu (CMU)
+                    Ongoing research into whether improvements to protocol parameters can be 
+                    achieved when doing SMPQC for functions with a solitary output. Because of the 
+                    No Cloning Theorem, quantum results paralel to the classical results of Halevi 
+                    et. al 2019 present a natural problem and seem likely to be achievable.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-project research" id="Coin-Image">
+              <div class="card-project-details">
+                <!-- Image and information for the card -->
+                <div class="card-project-description">
+                  <h4>Multiparty Coin Flipping for Large Scale Sortition</h4>
+                  <p>
+                    Spring 2021-Summer 2021, Collaborators: Justin Raizes (CMU) & Paul Gölz
+                    (CMU) Studied the Multiparty Coin Flipping literature hoping to find 
+                    tools for de- veloping secure procedures for large scale sortition. 
+                    For instance in selecting US congressional representatives. Based on a
+                    deep understanding of the re- quirements for Cleve’s impossibility 
+                    result I developed several approaches which are published in a 
+                    series of <a href="https://equalitybylot.com/2021/12/05">articles</a> on the sortitionist blog Equality by Lot.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-project research" id="MCSP-Image">
+              <div class="card-project-details">
+                <!-- Image and information for the card -->
+                <div class="card-project-description">
+                  <h4>Proving Depth 3 Formula-MCSP NP Complete</h4>
+                  <p>
+                    Fall 2018 - Spring 2019, Collaborators: Rahul Santhanam (Oxford) I
+                    investigated proof techniques for proving the depth 3-formula Minimum 
+                    Circuit Size Problem NP Complete. While the choice of open problem 
+                    turned out to be good (Rahul Ilango solved it in 2020) the tools I 
+                    developed never got to the level of sophistication required to 
+                    complete the proof.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-project research" id="NVM-Image">
+              <div class="card-project-details">
+                <!-- Image and information for the card -->
+                <div class="card-project-description">
+                  <h4>
+                  Bit-Flip-Efficient Coding for Non-Volatile Memory
+                  </h4>
+                  <p>
+                    Winter 2018 - Spring 2019, Collaborators: Justin Raizes (UCSC) & Daniel
+                    Bittman (UCSC) Many implementations of Non-Volatile-RAM deteriorate or 
+                    consume large amounts of energy with every bit flip. This project focused 
+                    on developing data structures and data-structure codes that reduced 
+                    bitflips. I think this area still has some very rich possibilities. 
+                    Resulted in a paper and my thesis both listed under Publications.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-project research" id="Hash-Image">
+              <div class="card-project-details">
+                <!-- Image and information for the card -->
+                <div class="card-project-description">
+                  <h4>
+                  Fourier Analysis of Weak Hash Functions
+                  </h4>
+                  <p>
+                    Winter 2018 - Winter 2018, Collaborators: Seshadhri Comandur (UCSC), 
+                    Justin Raizes (UCSC), & Will Bolden (UCSC) We used techniques from the
+                    Fourier Analysis of Boolean Functions to search for high influence 
+                    Juntas in weak Hash functions such as SHA-1. We were fairly successful
+                    within the first of the four rounds and discovered other interesting 
+                    patterns, but did not ultimately discover a mathematically satisfying 
+                    explanation for why these hash functions were breakable.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-project research" id="Facial-Image">
+              <div class="card-project-details">
+                <!-- Image and information for the card -->
+                <div class="card-project-description">
+                  <h4>                  
+                    Fooling Facial Recognition
+                  </h4>
+                  <p>
+                    Fall 2017 - Spring 2018, Collaborators: Anastasia McTaggart (UCSC), 
+                    Miriam del Cerro Marazuela (UCSC), Steven Mazliach (UCSC), & 
+                    Macie Cooper (UCSC) We investigated techniques for fooling facial 
+                    recognition software without the use of masks or other large facial 
+                    coverings. We found some success with drag style makeup, with partial 
+                    coverings, and with the use of reflective materials. Results, 
+                    motivations, and methods are summarized 
+                    <a href="https://ssrc-facial-recognition.herokuapp.com">here</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="section section-white">
+            <h2 class="section-title">About</h2>
+            <div id="about"></div>
+            <div class="home-about">
+              <img alt="profile picture of Matthew" class="home-profile" src="images/face.jpg">
+              <div class="p-3">
                 <p>
-                  Spring 2021-Summer 2021, Collaborators: Justin Raizes (CMU) & Paul Gölz
-                  (CMU) Studied the Multiparty Coin Flipping literature hoping to find 
-                  tools for de- veloping secure procedures for large scale sortition. 
-                  For instance in selecting US congressional representatives. Based on a
-                  deep understanding of the re- quirements for Cleve’s impossibility 
-                  result I developed several approaches which are published in a 
-                  series of <a href="https://equalitybylot.com/2021/12/05">articles</a> on the sortitionist blog Equality by Lot.
+                  My name is Matthew Gray and I am currently serving as an Adjunct 
+                  Faculty Member at Renton Technical College teaching Web Development 
+                  and React Native while also working on curriculum changes and organizing
+                  guest speakers. 
+                </p>
+                <p>
+                  In 2019 I completed a Bachelors of Arts with Honors in Computer Science
+                  and a Bachelors of Arts in Mathematics from the University of California
+                  Santa Cruz. This was the closest thing available to a degree in Theoretical
+                  Computer Science. While at UCSC I worked on a variety of research projects
+                  (most of which can be seen above), taught and TA'd several classes, helped 
+                  run a briefly existing group called the Computer Science Maker Space, took
+                  as many classes on CS theory as I could, volunteered as medical staff at 
+                  rock concerts, hunted for mushrooms, and played a lot of board games.
+                </p>
+                <p>
+                  After graduation, my partner and I moved to Oslo Norway where I had gotten a
+                  job at Microsoft. For my partner to stay in Norway she needed to get a job. 
+                  Hoping to get one, in the winter of 2020 she attended a Le Wagon web development
+                  bootcamp. But Covid shut down the world just as she was graduating and gutted
+                  the job market. And so now we are in the US and I am working for RTC.
                 </p>
               </div>
             </div>
           </div>
+          
+        </div> <!-- this is the closing tag for #main  -->
 
-          <div class="card-project research" id="MCSP-Image">
-            <div class="card-project-details">
-              <!-- Image and information for the card -->
-              <div class="card-project-description">
-                <h4>Proving Depth 3 Formula-MCSP NP Complete</h4>
-                <p>
-                  Fall 2018 - Spring 2019, Collaborators: Rahul Santhanam (Oxford) I
-                  investigated proof techniques for proving the depth 3-formula Minimum 
-                  Circuit Size Problem NP Complete. While the choice of open problem 
-                  turned out to be good (Rahul Ilango solved it in 2020) the tools I 
-                  developed never got to the level of sophistication required to 
-                  complete the proof.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-project research" id="NVM-Image">
-            <div class="card-project-details">
-              <!-- Image and information for the card -->
-              <div class="card-project-description">
-                <h4>
-                Bit-Flip-Efficient Coding for Non-Volatile Memory
-                </h4>
-                <p>
-                  Winter 2018 - Spring 2019, Collaborators: Justin Raizes (UCSC) & Daniel
-                  Bittman (UCSC) Many implementations of Non-Volatile-RAM deteriorate or 
-                  consume large amounts of energy with every bit flip. This project focused 
-                  on developing data structures and data-structure codes that reduced 
-                  bitflips. I think this area still has some very rich possibilities. 
-                  Resulted in a paper and my thesis both listed under Publications.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-project research" id="Hash-Image">
-            <div class="card-project-details">
-              <!-- Image and information for the card -->
-              <div class="card-project-description">
-                <h4>
-                Fourier Analysis of Weak Hash Functions
-                </h4>
-                <p>
-                  Winter 2018 - Winter 2018, Collaborators: Seshadhri Comandur (UCSC), 
-                  Justin Raizes (UCSC), & Will Bolden (UCSC) We used techniques from the
-                  Fourier Analysis of Boolean Functions to search for high influence 
-                  Juntas in weak Hash functions such as SHA-1. We were fairly successful
-                  within the first of the four rounds and discovered other interesting 
-                  patterns, but did not ultimately discover a mathematically satisfying 
-                  explanation for why these hash functions were breakable.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-project research" id="Facial-Image">
-            <div class="card-project-details">
-              <!-- Image and information for the card -->
-              <div class="card-project-description">
-                <h4>                  
-                  Fooling Facial Recognition
-                </h4>
-                <p>
-                  Fall 2017 - Spring 2018, Collaborators: Anastasia McTaggart (UCSC), 
-                  Miriam del Cerro Marazuela (UCSC), Steven Mazliach (UCSC), & 
-                  Macie Cooper (UCSC) We investigated techniques for fooling facial 
-                  recognition software without the use of masks or other large facial 
-                  coverings. We found some success with drag style makeup, with partial 
-                  coverings, and with the use of reflective materials. Results, 
-                  motivations, and methods are summarized 
-                  <a href="https://ssrc-facial-recognition.herokuapp.com">here</a>.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        
-        <div class="section section-white">
-          <h2 class="section-title">About</h2>
-          <div id="about"></div>
-          <div class="home-about">
-            <img alt="profile picture of Matthew" class="home-profile" src="images/face.jpg">
-            <div class="p-3">
-              <p>
-                My name is Matthew Gray and I am currently serving as an Adjunct 
-                Faculty Member at Renton Technical College teaching Web Development 
-                and React Native while also working on curriculum changes and organizing
-                guest speakers. 
-              </p>
-              <p>
-                In 2019 I completed a Bachelors of Arts with Honors in Computer Science
-                and a Bachelors of Arts in Mathematics from the University of California
-                Santa Cruz. This was the closest thing available to a degree in Theoretical
-                Computer Science. While at UCSC I worked on a variety of research projects
-                (most of which can be seen above), taught and TA'd several classes, helped 
-                run a briefly existing group called the Computer Science Maker Space, took
-                as many classes on CS theory as I could, volunteered as medical staff at 
-                rock concerts, hunted for mushrooms, and played a lot of board games.
-              </p>
-              <p>
-                After graduation, my partner and I moved to Oslo Norway where I had gotten a
-                job at Microsoft. For my partner to stay in Norway she needed to get a job. 
-                Hoping to get one, in the winter of 2020 she attended a Le Wagon web development
-                bootcamp. But Covid shut down the world just as she was graduating and gutted
-                the job market. And so now we are in the US and I am working for RTC.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-      </div> <!-- this is the closing tag for #main  -->
-
-      <div class="section footer" id="contact">
-        <div>
-          <h2 class="section-title">Contact</h2>
-          <div class="text-center">
-            <p>matt.t.gray[at]gmail.com</p>
-            <!-- <div class="icon-container"> -->
-              <!-- <a href="mailto:matt.t.gray@gmail.com">
-                <span class="fa-stack fa-lg icon-envelope">
-                  <i class="fa fa-square fa-stack-2x"></i>
-                  <i class="fa fa-envelope fa-stack-1x"></i>
-                </span>
-              </a> -->
-            <!-- </div> -->
-            <div class="icon-container">  
-              <a href="https://www.linkedin.com/in/graytmatter/">
-                <span class="fa-stack fa-lg icon-linkedin">
-                  <i class="fa fa-square fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x"></i>
-                </span>
-              </a>
-            </div>
-            <div class="icon-container">
-              <a href="https://github.com/graytmatter">
-                <span class="fa-stack fa-lg icon-github">
-                  <i class="fa fa-square fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x"></i>
-                </span>
-              </a>
-            </div>
-            <p>+1 (510) 610-8894</p>
-          </div>
-        </div>
-      </div>
-        
-<!--         
-        <div class="section section-blue" id="section-350">
+        <div class="section footer" id="contact">
           <div>
-            <h2>Contact</h2>
+            <h2 class="section-title">Contact</h2>
             <div class="text-center">
-              <p>Feel free to connect with me using any of the links provided.</p>
-              <a class="btn-box" href="/contacts/new">Contact Form</a>
+              <p>matt.t.gray[at]gmail.com</p>
+              <!-- <div class="icon-container"> -->
+                <!-- <a href="mailto:matt.t.gray@gmail.com">
+                  <span class="fa-stack fa-lg icon-envelope">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x"></i>
+                  </span>
+                </a> -->
+              <!-- </div> -->
+              <div class="icon-container">  
+                <a href="https://www.linkedin.com/in/graytmatter/">
+                  <span class="fa-stack fa-lg icon-linkedin">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="icon-container">
+                <a href="https://github.com/graytmatter">
+                  <span class="fa-stack fa-lg icon-github">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x"></i>
+                  </span>
+                </a>
+              </div>
+              <p>+1 (510) 610-8894</p>
             </div>
           </div>
+        </div>
+          
+  <!--         
+          <div class="section section-blue" id="section-350">
+            <div>
+              <h2>Contact</h2>
+              <div class="text-center">
+                <p>Feel free to connect with me using any of the links provided.</p>
+                <a class="btn-box" href="/contacts/new">Contact Form</a>
+              </div>
+            </div>
 
-        <div class="icon">
-          <a class="icon-link" href="https://www.facebook.com/jessica.dewitt.779"><i class="fa fa-facebook fa-5x" aria-hidden="true"></i></a>
-        </div>
-        <div class="icon">
-          <a class="icon-link" href="https://www.instagram.com/opalevanescence/"><i class="fa fa-instagram fa-5x" aria-hidden="true"></i></a>
-        </div>
-        <div class="icon">
-          <a class="icon-link" href="https://www.linkedin.com/in/jessica-a-dewitt/"></a>
-        </div>
-        <div class="icon">
-          <a class="icon-link" href="https://github.com/Opalevanescence"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
-        </div>
-        </div>
-      </div> -->
+          <div class="icon">
+            <a class="icon-link" href="https://www.facebook.com/jessica.dewitt.779"><i class="fa fa-facebook fa-5x" aria-hidden="true"></i></a>
+          </div>
+          <div class="icon">
+            <a class="icon-link" href="https://www.instagram.com/opalevanescence/"><i class="fa fa-instagram fa-5x" aria-hidden="true"></i></a>
+          </div>
+          <div class="icon">
+            <a class="icon-link" href="https://www.linkedin.com/in/jessica-a-dewitt/"></a>
+          </div>
+          <div class="icon">
+            <a class="icon-link" href="https://github.com/Opalevanescence"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
+          </div>
+          </div>
+        </div> -->
+      </div>
     </body>
 </html>

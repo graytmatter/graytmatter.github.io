@@ -70,7 +70,6 @@ window.addEventListener("load",()=>{
             i++;
         }
         animate();
-        // c.drawImage(petalImage, 500, 500, 60, 50);
     })
     
     function randAngle(){
@@ -97,13 +96,13 @@ window.addEventListener("load",()=>{
     }
     
     function animate(){
+        c.clearRect(0,0, canvas.width, canvas.height);
         petalArray.sort(compare);
         var navHeight = $("#navigation").height();
         canvas.width = window.innerWidth;
         canvas.height = $(".hero-image").height() - navHeight;
         canvas.style.paddingTop = navHeight;
         globalSize = window.innerWidth / 1600;
-        c.clearRect(0,0, canvas.width, canvas.height);
         for(petal of petalArray){
             petal.update();
             petal.draw();
@@ -130,6 +129,16 @@ window.addEventListener("load",()=>{
             c.rotate(Math.PI + this.angle);
             c.drawImage(petalImage, -1* this.size / 2,  -1* this.size / 2, this.size * globalSize, this.size * globalSize);
             c.restore();
+
+            if(modX > canvas.width - this.size){
+                c.save();
+                c.globalAlpha = (1 - (this.distance / maxDistance)) *0.5
+                var modX = (((this.x/(this.distance**2)%canvas.width)+canvas.width) %canvas.width)
+                c.translate(modX - canvas.width, this.y/distance**2);
+                c.rotate(Math.PI + this.angle);
+                c.drawImage(petalImage, -1* this.size / 2,  -1* this.size / 2, this.size * globalSize, this.size * globalSize);
+                c.restore();
+            }
             //[End Cite]
         }
         
