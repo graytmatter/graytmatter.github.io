@@ -46,6 +46,14 @@ body, html {
     }
 }
 
+/*************
+  The Banner Canvas
+**************/
+
+#petals {
+    position:absolute;
+    z-index:20;
+}
 
 /*****************
 The Navigation Bar 
