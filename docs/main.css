@@ -199,6 +199,10 @@ background-color: #111;
     word-wrap: break-word;
 }
 
+.square-card{
+    padding-bottom: 20%;
+}
+
 @media (max-width: 1100px) {
     .card-project {
         margin: 5% 10%;
@@ -208,6 +212,9 @@ background-color: #111;
     }
     .bottom-card{
         margin: 5% 10%;
+    }
+    .square-card{
+        padding-bottom: 40%;
     }
 }
 
@@ -229,6 +236,19 @@ background-color: #111;
     }
 }
 
+/*****************
+  Research Interests
+******************/
+
+
+.interests{
+    text-align: center;
+}
+
+#Venn-Image{
+    background-image: url("images/Venn.png");
+    margin-bottom: 10px;
+}
 
 /*****************
   Research Cards

@@ -44,7 +44,7 @@ window.addEventListener("load",()=>{
     
     
     // [Start Cite: Some of the lines were taken from / inspired by https://codepen.io/rudtjd2548/pen/qBpVzxP?editors=0010]
-    var numPetals = 100;
+    var numPetals = 12;
     var petalArray = [];
     var maxDistance = 2.5;
     var minDistance = 1;
@@ -60,7 +60,7 @@ window.addEventListener("load",()=>{
     
         var i = 0;
         while(i < numPetals){
-            var distance = minDistance + (Math.random() * maxDistance - minDistance);
+            var distance = minDistance + (Math.random() * (maxDistance - minDistance));
             var size = 100 * (1/distance**2);
             var x = size/2 + (canvas.width - size)*Math.random() * (distance**2);
             var y = size * 2 + (Math.random()*canvas.height/4*(distance**4));
@@ -69,6 +69,7 @@ window.addEventListener("load",()=>{
             petalArray.push(new Petal(x,y, size, 0, dx, dy, distance));
             i++;
         }
+        console.log("hi",petalArray)
         animate();
     })
     
