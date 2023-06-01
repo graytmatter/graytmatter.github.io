@@ -17,9 +17,9 @@ body, html {
 
   /* Position and center the image to scale nicely on all screens */
   background-attachment: fixed;
-  background-position: right 0% bottom 50%;
+  background-position: right 0% top 0%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 700px;
   /* position: relative; */
 }
 
@@ -27,7 +27,7 @@ body, html {
 .hero-text {
   text-align: left;
   position: absolute;
-  top: 50%;
+  top: 500px;
   left: 10%;
   /* transform: translate(-50%, -50%); */
   color: white;
@@ -43,6 +43,14 @@ body, html {
     }
     .hero-text {
         top: 100px;
+    }
+}
+
+@media (min-width: 1435px) {
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Cherry\ banner\ tall.jpeg");
+        background-size: cover;
+        background-position: right 0% top -220px;
     }
 }
 
