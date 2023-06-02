@@ -198,6 +198,9 @@ window.addEventListener("load",()=>{
             this.angle = correctAngle(dx,dy);
             // console.log(this.dy, this.dx, this.angle);
             // console.log(this.dx, this.dy)
+
+
+            document.querySelector("html").style.width = window.innerWidth
         }
     }
     
