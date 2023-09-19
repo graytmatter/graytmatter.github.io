@@ -1,2 +1,2 @@
 # personal-website
-My persona/professional/academic website
+My personal/professional/academic website
