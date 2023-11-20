@@ -35,7 +35,6 @@ window.addEventListener("load",()=>{
     var navHeight = $("#navigation").height();
     canvas.width = window.innerWidth;
     canvas.height = $(".hero-image").height() - navHeight;
-    canvas.style.marginTop = navHeight;
     
     var c = canvas.getContext('2d');
     console.log(c);
@@ -102,7 +101,7 @@ window.addEventListener("load",()=>{
         var navHeight = $("#navigation").height();
         canvas.width = window.innerWidth;
         canvas.height = $(".hero-image").height() - navHeight;
-        canvas.style.paddingTop = navHeight;
+        canvas.style.marginTop = navHeight;
         globalSize = window.innerWidth / 1600;
         for(petal of petalArray){
             petal.update();
