@@ -16,17 +16,52 @@
           </div>
         </div>
         <ul id="navigation">
-          <li onclick="scrollToSection('#work')"><a>Work Experience</a></li>
           <li><a onclick="scrollToSection('#publications')">Publications</a></li>
           <li><a onclick="scrollToSection('#interests')">Research Interests</a></li>
-          <li><a onclick="scrollToSection('#projects')">Academic Projects</a></li>
+          <li onclick="scrollToSection('#work')"><a>Work Experience</a></li>
           <li><a onclick="scrollToSection('#about')">About</a></li>
           <li><a onclick="scrollToSection('#contact')">Contact</a></li>
-          <!-- <li class="float-right"><a href="Student-Letter.pdf">Student's Letter</a></li> -->
-          <li class="float-right"><a href="CV 2023.pdf">CV</a></li>
+          <li class="float-right"><a href="CV Jan 2024.pdf">CV</a></li>
           
         </ul>
         <div id="main">
+
+
+          <div class="section section-white">
+            <h2 class="section-title">Publications</h2>
+            <div id="publications"></div>
+            <ul>
+              <li>2024 Bruno Cavalar, Eli Goldin, Matthew Gray, Peter Hall. A Meta-Complexity Characterization of Quantum Cryptography <a href ="https://eccc.weizmann.ac.il/report/2024/156/download">https://eccc.weizmann.ac.il/report/2024/156/download</a></li>
+              <li>2024 (Crypto 2024) Kai-Min Chuang, Eli Goldin, Matthew Gray. On Central Primitives for Quantum Cryptography with Classical Communication <a href ="https://arxiv.org/abs/2402.17715">https://arxiv.org/abs/2402.17715</a></li>
+              <li>2023 Bruno Cavalar, Eli Goldin, Matthew Gray, Peter Hall, Yanyi Liu, and Angelos Pelecanos. On the Computational Hardness of Quantum One-Wayness <a href ="https://arxiv.org/abs/2312.08363">https://arxiv.org/abs/2312.08363</a></li>
+              <li>2023 (CCC 2024) Noel Arteche, Gaia Carenini, and Matthew Gray. On the Quantum Automatability of Propositional Proof Systems  <a href ="https://eccc.weizmann.ac.il/report/2024/029/">https://eccc.weizmann.ac.il/report/2024/029/</a></li>
+              <li>2019 Matthew Gray. “LOADS of Space”, Local Order Agnosticism and Bit Flip Efficient Data Structure Codes <a href ="https://arxiv.org/abs/1908.05415">https://arxiv.org/abs/1908.05415</a></li>
+              <li>2018 (IEEE NVMSA) Daniel Bittman, Matthew Gray, Justin Raizes, Sinjoni Mukhopadhyay, Matt Bryson, Peter Alvaro, Darrell Long, and Ethan L Miller. Designing Data Structures to Minimize Bit Flips On NVM.</li>
+            </ul>
+          </div>
+
+          <div class="section section-white">
+            <h2 class="section-title">Research Interests</h2>
+            <div id="interests">
+              <p class="interests">  
+                My primary area of interest is the intersection of Quantum Computing, Cryptography, and Meta Complexity.
+              </p>
+              <div class="card-project bottom-card square-card" id="Venn-Image">
+                <div class="card-project-description">
+                  <p>In particular I am interested in the connections between the hardness of quantum meta complexity problems and the existence of quantum crypto primitives. I want to formalize a notion of Quantum Algorithmica and Quantum Impagliazzo worlds. I want to understand the connections between post quantum crypto and proof complexity. And I want to understand the ultimate limits of classical computation on ideal quantum computers. </p>
+                </div>
+                <!-- Overlayed link to Work Experience show page -->
+                <div class="hid-link"></div>
+              </div>
+              <p class="interests">
+                I am also secondarily interested in several questions in Philosophy. My main work in this area is a personalist Bayesian resolution to Hume's problem of Induction, that I really hope to publish this year. The main thurst of the work can be infomrally prhased as "So long as your beliefs are consitent, given sufficient time you will slay all deamons". Meaning that time and observation will allow you to—in some sense—not only defeat the sceptism of Hume but also that of a maximalist reading of Descartes and of the Cynics more broadly. However, as a non-professional philosopher, I'm not sure how seriously to ultimately take the argument.
+              </p>
+              <p class="interests">  
+                I am also interested in historical cryptography and am working on decrypting diplomatic letters from Italian city states in the fifteenth through seventeenth centuries.
+              </p>
+            </div>
+          </div>
+
           <div class="section section-white">
             <h2 class="section-title">Work Experience</h2>
             <div id="work"></div>
@@ -62,8 +97,8 @@
                 <!-- Image and information for the card -->
                 <div class="card-project-description">
                   <h4>Storage Systems Research Center: Research Assistant</h4>
-                  <p class="too-long-550">Santa Cruz, CA: Worked with graduate students and professors on research into storage and secu- rity. Notable projects include fooling facial recognition, using Fourier Analysis to investigate MD5, and Designing Data Structures to Minimize Bit Flips on NVM</p>
-                  <p class="short-550">Santa Cruz, CA: Worked with graduate students and professors on research into storage and secu- rity. Notable projects include fooling facial recognition, using Fourier Analysis to investigate MD5, and Designing Data Structures to Minimize...</p>
+                  <p class="too-long-550">Santa Cruz, CA: Worked with graduate students and professors on research into storage and security. Notable projects include fooling facial recognition, using Fourier Analysis to investigate MD5, and Designing Data Structures to Minimize Bit Flips on NVM</p>
+                  <p class="short-550">Santa Cruz, CA: Worked with graduate students and professors on research into storage and security. Notable projects include fooling facial recognition, using Fourier Analysis to investigate MD5, and Designing Data Structures to Minimize...</p>
                 </div>
                 <!-- Overlayed link to Work Experience show page -->
                 <div class="hid-link"></div>
@@ -75,8 +110,8 @@
                 <!-- Image and information for the card -->
                 <div class="card-project-description">
                   <h4>UC Santa Cruz: Teaching Assistant</h4>
-                  <p class="too-long-550">Santa Cruz, CA: TA’ed several algorithms, data structures, and programming courses. Developed and ran two student lead courses on the Mathematics of Communication (CS42A). Topics I have taught include Number Theoretic Cryptography, Information Theoretic Compression, Error Correcting Codes, Stack Frames, and Memory Management</p>
-                  <p class="short-550">Santa Cruz, CA: TA’ed several algorithms, data structures, and programming courses. Developed and ran two student lead courses on the Mathematics of Communication (CS42A). Topics I have taught include Number Theoretic Cryptography, Information Theoretic Compression, Error Correcting...</p>
+                  <p class="too-long-550">Santa Cruz, CA: TA'ed several algorithms, data structures, and programming courses. Developed and ran two student lead courses on the Mathematics of Communication (CS42A). Topics I have taught include Number Theoretic Cryptography, Information Theoretic Compression, Error Correcting Codes, Stack Frames, and Memory Management</p>
+                  <p class="short-550">Santa Cruz, CA: TA'ed several algorithms, data structures, and programming courses. Developed and ran two student lead courses on the Mathematics of Communication (CS42A). Topics I have taught include Number Theoretic Cryptography, Information Theoretic Compression, Error Correcting...</p>
                 </div>
                 <!-- Overlayed link to Work Experience show page -->
                 <div class="hid-link"></div>
@@ -100,7 +135,7 @@
                 <!-- Image and information for the card -->
                 <div class="card-project-description">
                   <h4>Last Minute Gear: Web Developer</h4>
-                  <p>San Francisco, CA: Maintained and expanded a full stack web app and it’s associated testing suite. Reg- ular use of Ruby, Javascript, HTML, CSS, Heroku, git etc. Occasionally did odd jobs as needed since I was half of a two man start up.</p>
+                  <p>San Francisco, CA: Maintained and expanded a full stack web app and it's associated testing suite. Regular use of Ruby, Javascript, HTML, CSS, Heroku, git etc. Occasionally did odd jobs as needed since I was half of a two man start up.</p>
                 </div>
                 <!-- Overlayed link to Work Experience show page -->
                 <div class="hid-link"></div>
@@ -109,168 +144,42 @@
 
             <div class="card-project bottom-card" id="GA-Image">
               <div class="card-project-details">
-                <!-- Image and information for the card -->
                 <div class="card-project-description">
                   <h4>General Assembly: Teaching Assistant</h4>
-                  <p>San Francisco, CA: Explained difficult Javascript and Ruby on Rails concepts. Drew out student’s knowl- edge by listening and asking questions. Guided students through troubleshooting so they could use similar techniques in the future.</p>
+                  <p>San Francisco, CA: Explained difficult Javascript and Ruby on Rails concepts. Drew out student's knowl- edge by listening and asking questions. Guided students through troubleshooting so they could use similar techniques in the future.</p>
                 </div>
-                <!-- Overlayed link to Work Experience show page -->
                 <div class="hid-link"></div>
               </div>
             </div>
           </div>
 
-          <div class="section section-white">
-            <h2 class="section-title">Publications</h2>
-            <div id="publications"></div>
-            <ul>
-              <li>2023 Bruno Cavalar, Eli Goldin, Matthew Gray, Peter Hall, Yanyi Liu, and Angelos Pelecanos. On the Computational Hardness of Quantum One-Wayness<a href ="https://arxiv.org/abs/2312.08363">https://arxiv.org/abs/2312.08363</a></li>
-              <li>2023 Noel Arteche, Gaia Carenini, and Matthew Gray. On the Quantum Automatability of Propositional Proof Systems  <a href ="https://eccc.weizmann.ac.il/report/2024/029/">https://eccc.weizmann.ac.il/report/2024/029/</a></li>
-              <li>2019 Matthew Gray. “LOADS of Space”, Local Order Agnosticism and Bit Flip Efficient Data Structure Codes. , August 2019<a href ="https://arxiv.org/abs/1908.05415">https://arxiv.org/abs/1908.05415</a></li>
-              <li>2018 (IEEE NVMSA) Daniel Bittman, Matthew Gray, Justin Raizes, Sinjoni Mukhopadhyay, Matt Bryson, Peter Alvaro, Darrell Long, and Ethan L Miller. Designing Data Structures to Minimize Bit Flips On NVM.</li>
-            </ul>
-          </div>
 
           <div class="section section-white">
-            <h2 class="section-title">Research Interests</h2>
-            <div id="interests">
-              <p class="interests">  
-                My primary area of interest is the intersection of Quantum Computing, Cryptography, and Meta Complexity.
-              </p>
-              <div class="card-project bottom-card square-card" id="Venn-Image">
-                <div class="card-project-description">
-                  <p>In particular I am interested in the connections between the hardness of quantum meta complexity problems and the existence of quantum crypto primitives. I want to formalize a notion of Quantum Algorithmica and Quantum Impagliazzo worlds. I want to understand the connections between post quantum crypto and proof complexity. And I want to understand the ultimate limits of classical computation on ideal quantum computers. </p>
-                </div>
-                <!-- Overlayed link to Work Experience show page -->
-                <div class="hid-link"></div>
-              </div>
-              <p class="interests">  
-                I am interested in several questions in Philosophy and have developed a Bayesian resolution to Hume's problem of Induction.
-              </p>
-            </div>
-            <!-- <ul>
-              <li>Quantum Computing, Quantum Cryptogrpahy, and Secure Multiparty Quantum Computation.</li>
-              <li>Cryptogrpahy, Secure Multiparty Computation, Multiparty Coin Flipping, and Sortition.</li>
-              <li>Coding Theory, Non-Volatile Memory, Local Order Agnosticism, and Bit-Flip-Effecient Codes. </li>
-              <li>Complexity Theory, Circuit Complexity, and The Minimum Size Circuit Problem.</li>
-              <li>Information Theory, Error Correction, Compression, Learning, and Inference.</li>
-              <li>Fourier Analysis of Boolean Fucntions and Hash Fucntion Analysis.</li>
-              <li>Write Effecient Data Structures, Monotonicity Testing, and Sublinear Algorithms.</li>
-            </ul> -->
-          </div>
-
-          <div class="section section-white">
-            <h2 class="section-title">Academic Projects</h2>
-            <div id="projects"></div>
-            <p style="text-align: center;">(note: This section is very out of date and only includes work done before starting my PhD)</p>
-            <!-- <div class="card-project research" id="Quantum-Image">
-              <div class="card-project-details">
-                <div class="card-project-description">
-                  <h4>Secure Multiparty Quantum Computation for Single Output Functions</h4>
-                  <p>
-                    Fall 2021-Present, Collaborators: Justin Raizes (CMU) & Chen-Da Liu (CMU)
-                    Ongoing research into whether improvements to protocol parameters can be 
-                    achieved when doing SMPQC for functions with a solitary output. Because of the 
-                    No Cloning Theorem, quantum results paralel to the classical results of Halevi 
-                    et. al 2019 present a natural problem and seem likely to be achievable.
-                  </p>
-                </div>
-              </div>
-            </div> -->
-
-            <div class="card-project research" id="Coin-Image">
-              <div class="card-project-details">
-                <div class="card-project-description">
-                  <h4>Multiparty Coin Flipping for Large Scale Sortition</h4>
-                  <p>
-                    Spring 2021-Summer 2021, Collaborators: Justin Raizes (CMU) & Paul Gölz
-                    (CMU) Studied the Multiparty Coin Flipping literature hoping to find 
-                    tools for de- veloping secure procedures for large scale sortition. 
-                    For instance in selecting US congressional representatives. Based on a
-                    deep understanding of the re- quirements for Cleve’s impossibility 
-                    result I developed several approaches which are published in a 
-                    series of <a href="https://equalitybylot.com/2021/12/05">articles</a> on the sortitionist blog Equality by Lot.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="card-project research" id="MCSP-Image">
-              <div class="card-project-details">
-                <div class="card-project-description">
-                  <h4>Proving Depth 3 Formula-MCSP NP Complete</h4>
-                  <p>
-                    Fall 2018 - Spring 2019, Collaborators: Rahul Santhanam (Oxford) I
-                    investigated proof techniques for proving the depth 3-formula Minimum 
-                    Circuit Size Problem NP Complete. While the choice of open problem 
-                    turned out to be good (Rahul Ilango solved it in 2020) the tools I 
-                    developed never got to the level of sophistication required to 
-                    complete the proof.
-                  </p>
-                </div>
-              </div>
-            </div> -->
-
-            <div class="card-project research" id="NVM-Image">
-              <div class="card-project-details">
-                <!-- Image and information for the card -->
-                <div class="card-project-description">
-                  <h4>
-                  Bit-Flip-Efficient Coding for Non-Volatile Memory
-                  </h4>
-                  <p>
-                    Winter 2018 - Spring 2019, Collaborators: Justin Raizes (UCSC) & Daniel
-                    Bittman (UCSC) Many implementations of Non-Volatile-RAM deteriorate or 
-                    consume large amounts of energy with every bit flip. This project focused 
-                    on developing data structures and data-structure codes that reduced 
-                    bitflips. I think this area still has some very rich possibilities. 
-                    Resulted in a paper and my thesis both listed under Publications.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-project research" id="Hash-Image">
-              <div class="card-project-details">
-                <!-- Image and information for the card -->
-                <div class="card-project-description">
-                  <h4>
-                  Fourier Analysis of Weak Hash Functions
-                  </h4>
-                  <p>
-                    Winter 2018 - Winter 2018, Collaborators: Seshadhri Comandur (UCSC), 
-                    Justin Raizes (UCSC), & Will Bolden (UCSC) We used techniques from the
-                    Fourier Analysis of Boolean Functions to search for high influence 
-                    Juntas in weak Hash functions such as SHA-1. We were fairly successful
-                    within the first of the four rounds and discovered other interesting 
-                    patterns, but did not ultimately discover a mathematically satisfying 
-                    explanation for why these hash functions were breakable.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-project research" id="Facial-Image">
-              <div class="card-project-details">
-                <!-- Image and information for the card -->
-                <div class="card-project-description">
-                  <h4>                  
-                    Fooling Facial Recognition
-                  </h4>
-                  <p>
-                    Fall 2017 - Spring 2018, Collaborators: Anastasia McTaggart (UCSC), 
-                    Miriam del Cerro Marazuela (UCSC), Steven Mazliach (UCSC), & 
-                    Macie Cooper (UCSC) We investigated techniques for fooling facial 
-                    recognition software without the use of masks or other large facial 
-                    coverings. We found some success with drag style makeup, with partial 
-                    coverings, and with the use of reflective materials. Results, 
-                    motivations, and methods are summarized 
-                    <a href="https://ssrc-facial-recognition.herokuapp.com">here</a>.
-                  </p>
-                </div>
-              </div>
-            </div>
-
+            <h2 class="section-title">I am</h2>
+            <p>
+              I am made of stories. Told to myself, by myself, about myself. A paradox perhaps, but also undoubtably the truth. I wear them like armor in a universe that I can only build out of stories but which is ultimately made out of details. Stories are the death of detail and details the death of stories. Let me be a story of infinite omission, rather than a lie with an intent to deceive. Let my armor be made of reality, though it be pruned to near non existence.
+            </p>
+            <p>
+              I am a cartoon character drawn with lines to separate me from infinity. I am also the cartoon world I navigate. The only lines separating the pen I write with from the air it moves through exist in me, and us, for now. I paint mountains and my mountains are me.
+            </p>
+            <p>
+              I am a fuzzy collection of quantum amplitudes representing a trillion micro-organisms working together for their greater good in a world, the true world, without color, without smells, without stories. Only details, only infinite truth, austere but filled with overwhelming, fractal multiplicity.
+            </p>
+            <p>
+              I am not alone. I am made of stories, told by us, about everything. I am made of mathematics, star stuff, and recipes for cake discovered or invented by you, by us, by we. I am not alone, and neither are you.
+            </p>
+            <p>
+              I am made of hugs, from my parents, friends, family. I am made of my wife's fingers, playing with my hair. I am made of the simple syrup and orange juice which were all I could keep down in the illness that left me floor ridden, crawling across Yosemite cabin carpet.
+            </p>
+            <p>
+              I get to choose. Which circle will I draw through infinity and label as me? Which parts of you will I include? My cartoon painting of your face? Your voice, your stories, your laughter, your pain?
+            </p>
+            <p>
+              My choice will not be final. I am a breathing, flexing circle, drawn again and yet again. The pen, which is the air and the page till lines are drawn, cuts its circuit every day, every day taking a different path. 
+            </p>
+            <p>
+              As we sit here and paint these mountains together. I hope your mountains, the you that is the mountains, the story of mountains told to yourself, by yourself, about yourself, is at least as beautiful as mine.
+            </p>
           </div>
           
           <div class="section section-white">
@@ -280,16 +189,11 @@
               <img alt="profile picture of Matthew" class="home-profile" src="images/face.jpg">
               <div class="p-3">
                 <p>
-                  My name is Matthew Gray and I am currently studying for my DPhil in TCS at 
-                  the University of Oxford where I am very grateful to be affiliated with Magdalen College 
-                  and advised by Rahul Santhanam. 
+                  My name is Matthew Gray. I was born in Berkeley California, did my undergrad at UC Santa Cruz, worked for Microsoft Norway in Oslo, worked for Renton Technical College outside of Seattle, and am now persuing a DPhil in Computer Science at the University of Oxford. 
+                  I am very grateful to be affiliated with Magdalen College and advised by Rahul Santhanam.
                 </p>
                 <p>
-                  Since I guess I have your attention here for a second, be kind to someone today. 
-                  That someone can be yourself.
-                </p>
-                <p>
-                  Feel free to reach out if you are interested in Quantum Meta-Complexity. I'd be excited to talk.
+                  Feel free to reach out if you are interested in Quantum Meta-Complexity or Quantum Cryptography. I'd be excited to talk.
                 </p>
               </div>
             </div>
@@ -302,14 +206,6 @@
             <h2 class="section-title">Contact</h2>
             <div class="text-center">
               <p>matthew.gray[at]magd.ox.ac.uk</p>
-              <!-- <div class="icon-container"> -->
-                <!-- <a href="mailto:matt.t.gray@gmail.com">
-                  <span class="fa-stack fa-lg icon-envelope">
-                    <i class="fa fa-square fa-stack-2x"></i>
-                    <i class="fa fa-envelope fa-stack-1x"></i>
-                  </span>
-                </a> -->
-              <!-- </div> -->
               <div class="icon-container">  
                 <a href="https://www.linkedin.com/in/graytmatter/">
                   <span class="fa-stack fa-lg icon-linkedin">
@@ -326,35 +222,10 @@
                   </span>
                 </a>
               </div>
-              <p>+1 (510) 610-8894</p>
+              <p>+1 (510) 328-3949</p>
             </div>
           </div>
         </div>
-          
-  <!--         
-          <div class="section section-blue" id="section-350">
-            <div>
-              <h2>Contact</h2>
-              <div class="text-center">
-                <p>Feel free to connect with me using any of the links provided.</p>
-                <a class="btn-box" href="/contacts/new">Contact Form</a>
-              </div>
-            </div>
-
-          <div class="icon">
-            <a class="icon-link" href="https://www.facebook.com/jessica.dewitt.779"><i class="fa fa-facebook fa-5x" aria-hidden="true"></i></a>
-          </div>
-          <div class="icon">
-            <a class="icon-link" href="https://www.instagram.com/opalevanescence/"><i class="fa fa-instagram fa-5x" aria-hidden="true"></i></a>
-          </div>
-          <div class="icon">
-            <a class="icon-link" href="https://www.linkedin.com/in/jessica-a-dewitt/"></a>
-          </div>
-          <div class="icon">
-            <a class="icon-link" href="https://github.com/Opalevanescence"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
-          </div>
-          </div>
-        </div> -->
       </div>
     </body>
 </html>
