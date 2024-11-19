@@ -39,7 +39,7 @@ body, html {
     .hero-image {
         background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Cherry\ banner\ tall.jpeg");
         background-attachment: scroll;
-        /* background-position: right 0; */
+        background-position: right 0 bottom -100;
         height: 350px; 
     }
     .hero-text {
@@ -255,8 +255,9 @@ background-color: #111;
 }
 
 #Venn-Image{
-    background-image: url("images/Venn.png");
-    margin-bottom: 10px;
+    background-image: url("images/Venn 2024.png");
+    margin-bottom: 50px;
+    /* background-position: right 0 bottom 0; */
 }
 
 /*****************
