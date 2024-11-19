@@ -49,7 +49,7 @@ body, html {
 
 @media (min-width: 1435px) {
     .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Cherry\ banner\ tall.jpeg");
+        background-image: url("images/Cherry\ banner\ tall.jpeg");
         background-size: cover;
         background-position: right 0% top -220px;
     }
