@@ -158,6 +158,13 @@ background-color: #111;
     display: none;
 }
 
+#Balliol-Image{
+    background-image: url("images/Balliol.jpg");
+}
+
+#Oxford-Image{
+    background-image: url("images/Rad-cam.jpg");
+}
 
 #RTC-Image{
     background-image: url("images/RTC.jpeg");
