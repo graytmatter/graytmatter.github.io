@@ -52,7 +52,7 @@ window.addEventListener("load",()=>{
     
     
     const petalImage = new Image();
-    petalImage.src = './images/petal.png';
+    petalImage.src = './images/autumn-leaf.png';
     
     petalImage.addEventListener('load',()=>{
         //[End Cite ]

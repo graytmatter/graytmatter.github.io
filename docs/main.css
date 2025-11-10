@@ -11,7 +11,7 @@ body, html {
 **************/
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Cherry\ banner\ wide.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Banner\ wide.jpeg");
   width: 100%;
   /* Set a specific height */
   height: 700px;
@@ -37,7 +37,7 @@ body, html {
 
 @media (max-width: 550px) {
     .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Cherry\ banner\ tall.jpeg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Banner\ tall.jpeg");
         background-attachment: scroll;
         background-position: right 0 bottom -100;
         height: 350px; 
@@ -49,9 +49,9 @@ body, html {
 
 @media (min-width: 1435px) {
     .hero-image {
-        background-image: url("images/Cherry\ banner\ tall.jpeg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("images/Banner\ tall.jpeg");
         background-size: cover;
-        background-position: right 0% top -220px;
+        background-position: right 0% bottom 0%;
     }
 }
 
@@ -201,7 +201,9 @@ background-color: #111;
 
 .card-project:hover {
     background-image: none !important;
-    background-color:#fcecf0 !important;
+    /* background-color:#fcecf0 !important; */
+    /* background-color:#fddbca !important; */
+    background-color: #fff9d4;
 }
 
 .card-project:hover .card-project-description h4{
@@ -328,7 +330,11 @@ background-color: #111;
 ******************/
 
 .footer{
-    background-color: #d1e9b4;
+    /* background-color: #d1e9b4; */
+    /* background-color: #f5f9cc; */
+    /* background-color: #cdcdcd; */
+    background-color: #fff9d4;
+    /* background-color: #b44a4a; */
     padding: 10px;
 }
 
@@ -349,7 +355,9 @@ background-color: #111;
 } */
 
 .fa-stack{
-    color: #453C8D;
+    /* color: #453C8D; */
+    color: #9b2323;
+    /* color: #ffdd00; */
 }
 /* .icon-facebook {
    color:#3b5998;
