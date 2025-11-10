@@ -359,6 +359,15 @@ background-color: #111;
     color: #9b2323;
     /* color: #ffdd00; */
 }
+
+p{
+    /* text-align: center; */
+    /* align-self: center; */
+    /* vertical-align: middle; */
+    margin: 10px auto;
+    max-width: 800px;
+
+}
 /* .icon-facebook {
    color:#3b5998;
 }
