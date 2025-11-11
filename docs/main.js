@@ -46,7 +46,7 @@ window.addEventListener("load",()=>{
     var numPetals = 12;
     var petalArray = [];
     var maxDistance = 2.5;
-    var minDistance = 1;
+    var minDistance = 0.5;
     var globalSize = window.innerWidth / 1600;
     var speed = 0.5 * globalSize;
     
@@ -123,7 +123,11 @@ window.addEventListener("load",()=>{
         this.draw = function(){
             //[Cite: Took this angling code from https://stackoverflow.com/questions/3793397/html5-canvas-drawimage-with-at-an-angle]
             c.save();
-            c.globalAlpha = (1 - (this.distance / maxDistance)) *0.5
+
+            // This sets the opacity of the leaf, maxing out at 0.8 and minimizing out at 0.1 getting lower the farther back the leaf is.
+            c.globalAlpha = (0.8 - ((this.distance - minDistance) /( maxDistance - minDistance))*0.7)
+
+
             var modX = (((this.x/(this.distance**2)%canvas.width)+canvas.width) %canvas.width)
             c.translate(modX , this.y/distance**2);
             c.rotate(Math.PI + this.angle);
@@ -132,7 +136,7 @@ window.addEventListener("load",()=>{
 
             if(modX > canvas.width - this.size){
                 c.save();
-                c.globalAlpha = (1 - (this.distance / maxDistance)) *0.5
+                c.globalAlpha = (0.9 - ((this.distance - minDistance) /( maxDistance - minDistance))*0.8)
                 var modX = (((this.x/(this.distance**2)%canvas.width)+canvas.width) %canvas.width)
                 c.translate(modX - canvas.width, this.y/distance**2);
                 c.rotate(Math.PI + this.angle);
