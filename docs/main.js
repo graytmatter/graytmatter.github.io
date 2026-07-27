@@ -42,7 +42,7 @@ window.addEventListener("load",()=>{
     
     
     
-    // [Start Cite: Some of the lines were taken from / inspired by https://codepen.io/rudtjd2548/pen/qBpVzxP?editors=0010]
+    // [Start Cite 1: Some of the lines were taken from / inspired by https://codepen.io/rudtjd2548/pen/qBpVzxP?editors=0010]
     var numPetals = 12;
     var petalArray = [];
     var maxDistance = 2.5;
@@ -55,7 +55,7 @@ window.addEventListener("load",()=>{
     petalImage.src = './images/autumn-leaf.png';
     
     petalImage.addEventListener('load',()=>{
-        //[End Cite ]
+    //[End Cite 1]
     
         var i = 0;
         while(i < numPetals){
@@ -96,6 +96,7 @@ window.addEventListener("load",()=>{
     }
     
     function animate(){
+        console.log(petalArray[0].dx, petalArray[0].dy)
         c.clearRect(0,0, canvas.width, canvas.height);
         petalArray.sort(compare);
         var navHeight = $("#navigation").height();
@@ -121,7 +122,7 @@ window.addEventListener("load",()=>{
         this.distance = distance;
     
         this.draw = function(){
-            //[Cite: Took this angling code from https://stackoverflow.com/questions/3793397/html5-canvas-drawimage-with-at-an-angle]
+            //[Start Cite 2: Took this angling code from https://stackoverflow.com/questions/3793397/html5-canvas-drawimage-with-at-an-angle]
             c.save();
 
             // This sets the opacity of the leaf, maxing out at 0.8 and minimizing out at 0.1 getting lower the farther back the leaf is.
@@ -143,7 +144,7 @@ window.addEventListener("load",()=>{
                 c.drawImage(petalImage, -1* this.size / 2,  -1* this.size / 2, this.size * globalSize, this.size * globalSize);
                 c.restore();
             }
-            //[End Cite]
+            //[End Cite 2]
         }
         
     
@@ -154,6 +155,7 @@ window.addEventListener("load",()=>{
     
             this.x = this.x + (this.dx*speed);
             this.y = this.y + (this.dy + 0.15)*speed;
+            
     
             // console.log(this.y/this.distance**2, canvas.height)
             if(this.y/this.distance**2 > canvas.height){
@@ -187,6 +189,9 @@ window.addEventListener("load",()=>{
                     // console.log(rand, this.dx, );
                     this.dx = - this.dx / 2;
                 }
+            }else{
+                this.dx = this.dx + (0.5 * (Math.random() - 0.5))
+                this.dy = this.dy + (0.2 * (Math.random() - 0.5))
             }
             // if(Math.abs(this.dx) < 1){
             //     // console.log("trigger", this.dx)
@@ -198,6 +203,7 @@ window.addEventListener("load",()=>{
             //         this.dx = -this.dx - 0.5;
             //     }
             // }
+
             this.angle = correctAngle(dx,dy);
             // console.log(this.dy, this.dx, this.angle);
             // console.log(this.dx, this.dy)
